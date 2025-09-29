@@ -26,7 +26,7 @@ jobs:
           -Dsonar.projectKey=my-Java-web-app
       env:
         SONAR_TOKEN: sqa_8ad9119b7b3987224bd75336eff6b2a769df9c71
-        SONAR_HOST_URL: https://sonarcloud.io
+        SONAR_HOST_URL: http://localhost:9000
       # Check the Quality Gate status.
     - name: SonarQube Quality Gate check
       id: sonarqube-quality-gate-check
